@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+
+   <ul>
+    <% array.forEach((blog, index) => { %>
+      <li>
+        <a href="/blogs/<%= index + 1 %>"><%= blog.title %></a>
+        <form action="/blogs/<%= index + 1 %>/delete" method="POST" style="display:inline;">
+          <button type="submit">Delete</button>
+        </form>
+        <a href="/blogs/<%= index + 1 %>/edit">Edit</a>
+      </li>
+    <% }) %>
+  </ul>
+  
+</div>
+
+<%- include('partials/footer.ejs') %>

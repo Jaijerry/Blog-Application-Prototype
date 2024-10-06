@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+
+<div id="Home" class="container">
+    <h2>Blog of Fantasies and Stories</h2>
+    <p>
+        This is a blog webpage of interesting storeies and imaginary fantasies. 
+        This webpage was created as a Capstone project for a Web development course. 
+        So, we may post some tech news and some tech blogs. Thus, it is for now. 
+        I am thinking of creating a free subscription blog for 
+        practice so you can also recieve mail once i post an article.
+    </p>
+</div>
+
+<div id="Blog" class="container">
+    <h2>Blog Creation</h2>
+    <p>
+        This page does not save any blog as no database is used. It uses session to store the blogs so the data will be reset if the session is closed.
+    </p>
+    <form action="/create">
+        <div style="text-align: center;">
+            <button>Create a blog</button>
+        </div>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs') %>
